@@ -1,0 +1,45 @@
+{
+  "$comment": "Reference A2A Agent Card for the agent-leash educational project. This is a REFERENCE card: there is no live A2A endpoint behind it yet. It exists to show the shape of a standards-aware capability declaration. See docs/a2a-agent-card.md.",
+  "protocolVersion": "1.0",
+  "name": "LEASH-8 Scorecard Agent",
+  "description": "Educational agent for the LEASH-8 control model: explains the 8 control domains for AI agents with delegated authority, walks an architecture through the scorecard, and returns a scored, evidence-oriented readout. It does not execute actions, hold credentials, or connect to your infrastructure: input is your description, output is text.",
+  "url": "https://github.com/Palo-Alto-AI-Research-Lab/agent-leash",
+  "provider": {
+    "organization": "Palo Alto Research Lab (Anton Dzyatkovsky)",
+    "url": "https://github.com/Palo-Alto-AI-Research-Lab"
+  },
+  "version": "0.1.0",
+  "documentationUrl": "https://github.com/Palo-Alto-AI-Research-Lab/agent-leash/blob/main/docs/a2a-agent-card.md",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "defaultInputModes": ["text/plain", "text/markdown"],
+  "defaultOutputModes": ["text/markdown"],
+  "skills": [
+    {
+      "id": "leash8-scorecard-walkthrough",
+      "name": "LEASH-8 scorecard walkthrough",
+      "description": "Given a plain-text description of an agent system (tools, credentials, approval flow, egress channels), returns a domain-by-domain LEASH-8 score with the evidence each score would require and the cheapest next control to implement.",
+      "tags": ["agent-hardening", "zero-trust", "scorecard", "education"],
+      "examples": [
+        "Score my setup: one Claude agent with shell, browser and Telegram, running under my user account, approvals are me saying ok in the same chat.",
+        "Which LEASH-8 domain should a two-person team close first?"
+      ]
+    },
+    {
+      "id": "leash8-approval-design-review",
+      "name": "Approval design review",
+      "description": "Reviews a described approval flow against the approval-design checklist (out-of-band channel, allowlisted approver, token bound to request id, expiry, deny-path test) and lists which checks fail.",
+      "tags": ["approvals", "human-in-the-loop", "confused-deputy"],
+      "examples": [
+        "My agent asks for a thumbs-up in Slack before sending invoices. What fails?"
+      ]
+    }
+  ],
+  "securitySchemes": {},
+  "security": [],
+  "signature": null,
+  "$signatureNote": "Unsigned. When a live endpoint ships, this card gets a signed version per A2A signed Agent Cards; an unsigned card behind HTTPS on a controlled repo is the honest interim."
+}
