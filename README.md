@@ -50,6 +50,10 @@ Want your agent architecture run through this scorecard, or a hardening pass on 
 
 If this saved you a bad week, star the repo: community catalogs require about 10 stars of social proof before they accept a submission, and stars are how the next person finds this.
 
+## Cite this work
+
+If this repo shows up in your research, cite it via [CITATION.cff](CITATION.cff) (GitHub's "Cite this repository" button). Academic identity: Anton Dzyatkovsky publishes as **Anton Dziatkovskii** ([ORCID 0000-0001-7408-3054](https://orcid.org/0000-0001-7408-3054)).
+
 ## License
 
 MIT. Take it, run it, teach it.
