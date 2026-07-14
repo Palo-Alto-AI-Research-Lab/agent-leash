@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use agent-leash in research or software, please cite it as below."
+title: "agent-leash"
+type: software
+authors:
+  - family-names: Dziatkovskii
+    given-names: Anton
+    orcid: "https://orcid.org/0000-0001-7408-3054"
+    affiliation: "Palo Alto AI Research Lab"
+repository-code: "https://github.com/Palo-Alto-AI-Research-Lab/agent-leash"
+url: "https://github.com/Palo-Alto-AI-Research-Lab/agent-leash"
+abstract: >-
+  LEASH-8: an 8-domain control model for AI agents with delegated authority. Scorecard, approval-design checklist, plan-vs-authorize pattern. Patterns from a live production agent operation, sanitized. Free, MIT.
