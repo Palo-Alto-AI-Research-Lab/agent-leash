@@ -38,13 +38,32 @@ We claim: these controls reduce blast radius, raise attacker cost, and make agen
 
 We do NOT claim: "your agents will be secure", "prompt injection solved", or any outcome guarantee. Anyone who claims that is selling you a benchmark result, and benchmarks are not your production.
 
-## Versioning
+## Versioning and roadmap
 
-Releases are tagged twice a week (Monday and Thursday), small commits daily. See [CHANGELOG.md](CHANGELOG.md). Pain-driven roadmap lives in [claude-bible](https://github.com/Palo-Alto-AI-Research-Lab/claude-bible/blob/main/ROADMAP.md), the family map of all our open repos.
+**Now — [v0.1.0](https://github.com/Palo-Alto-AI-Research-Lab/agent-leash/releases/tag/v0.1.0).**
+The LEASH-8 control model, the 24-statement scorecard, the plan-vs-authorize write-up, the
+approval-design checklist and the reference A2A Agent Card.
+
+**Next**, in the order we would take them:
+
+- **Worked examples of the gate**, not just the pattern — the question we get is "what does the
+  policy layer actually look like in code".
+- **Evidence templates per domain**: what to keep so a control is auditable after the fact, which
+  is the difference between a claim and a control.
+- **Scorecard calibration from other people's systems.** The bands came from ours. If you score
+  yours and the bands read wrong, that is the most useful issue you can open.
+
+Versioning is semver, and **every noticeable change ships as a new minor release** — so the
+[release feed](https://github.com/Palo-Alto-AI-Research-Lab/agent-leash/releases) is the honest
+record of how far this model has been carried, rather than a cadence we promise in advance.
+(The older promise here — "tagged twice a week" — was a cadence, and it was not kept; the
+release feed is what replaces it.)
+See [CHANGELOG.md](CHANGELOG.md). The pain-driven roadmap across all our repos lives in
+[claude-bible](https://github.com/Palo-Alto-AI-Research-Lab/claude-bible/blob/main/ROADMAP.md).
 
 ## Who made this
 
-Anton Dzyatkovsky and his AI co-founder (Claude), Palo Alto Research Lab. We build an AI digital twin and a production agent operation in public: [clawrush](https://github.com/Palo-Alto-AI-Research-Lab/clawrush) (EN diary), Telegram [@ClawRus](https://t.me/ClawRus) (RU).
+Anton Dziatkovskii and his AI co-founder (Claude), Palo Alto Research Lab. We build an AI digital twin and a production agent operation in public: [clawrush](https://github.com/Palo-Alto-AI-Research-Lab/clawrush) (EN diary), Telegram [@ClawRus](https://t.me/ClawRus) (RU).
 
 Want your agent architecture run through this scorecard, or a hardening pass on your setup? WhatsApp: **+1 341 222 9178**.
 

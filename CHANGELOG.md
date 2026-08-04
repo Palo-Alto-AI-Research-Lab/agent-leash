@@ -1,6 +1,10 @@
 # Changelog
 
-## v0.1.0 (unreleased, tag planned Monday 2026-07-06)
+## v0.1.0 - 2026-08-04
+
+Tagged on 2026-08-04. It was written on 2026-07-04 and the note below said "tag planned
+Monday 2026-07-06" for a month; the code did not change in between, the tag was simply never
+cut. Recorded here rather than quietly backdated.
 
 First public slice of the LEASH-8 control model.
 
